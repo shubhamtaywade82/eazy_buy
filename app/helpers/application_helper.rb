@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module ApplicationHelper  
+module ApplicationHelper
   def flash_messages
     capture do
       flash.each do |key, value|
@@ -11,6 +11,5 @@ module ApplicationHelper
         )
       end
     end
-  end        
-
+  end
 end

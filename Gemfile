@@ -71,6 +71,7 @@ group :development do
   gem "annotate"
   gem "better_errors"
   gem "binding_of_caller"
+  gem "bundler-audit"
   gem "web-console"
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
@@ -81,3 +82,5 @@ end
 
 gem "cancancan", "~> 3.5"
 gem "devise", "~> 4.9"
+gem "faker", "~> 3.2"
+gem "simplecov", require: false, group: :test
