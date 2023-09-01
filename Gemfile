@@ -83,3 +83,15 @@ group :development, :test do # rubocop:todo Bundler/DuplicatedGroup
   gem "rubocop-rails"
   gem "rubocop-rspec"
 end
+
+group :development do
+  gem "better_errors"
+  gem "binding_of_caller"
+end
+
+group :development do
+  gem "better_errors"
+  gem "binding_of_caller"
+end
+
+gem "cancancan", "~> 3.5"
