@@ -54,16 +54,24 @@ gem "bootsnap", require: false
 # gem "image_processing", "~> 1.2"
 
 group :development, :test do
+  gem "database_cleaner-active_record"
   gem "factory_bot_rails"
   gem "rspec-rails"
+  gem "rubocop"
+  gem "rubocop-performance"
+  gem "rubocop-rails"
+  gem "rubocop-rspec"
+  gem "shoulda-matchers"
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[mri mingw x64_mingw]
 end
 
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
+  gem "annotate"
+  gem "better_errors"
+  gem "binding_of_caller"
   gem "web-console"
-
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
 
@@ -71,27 +79,5 @@ group :development do
   # gem "spring"
 end
 
-gem "devise", "~> 4.9"
-
-group :development do # rubocop:todo Bundler/DuplicatedGroup
-  gem "annotate"
-end
-
-group :development, :test do # rubocop:todo Bundler/DuplicatedGroup
-  gem "rubocop"
-  gem "rubocop-performance"
-  gem "rubocop-rails"
-  gem "rubocop-rspec"
-end
-
-group :development do
-  gem "better_errors"
-  gem "binding_of_caller"
-end
-
-group :development do
-  gem "better_errors"
-  gem "binding_of_caller"
-end
-
 gem "cancancan", "~> 3.5"
+gem "devise", "~> 4.9"
